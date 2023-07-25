@@ -5,9 +5,11 @@
 //terminal-> tsc init -> para generar la configuración de TS ( tsconfig.json )
 //terminal-> tsc -> para convertir todos los archivos ts a js
 //terminal-> tsc --w -> para que entre en estado observable y que haga la conversión automática.
-const msg = "Hola mundo";
-const hero = {
-    name: 'IronMap',
-    age: 45
-};
-console.log(hero.age);
+(() => {
+    // //! Evitar los any
+    const a = 10;
+    // tsconfig.json -> "noImplicitAny": true -> exige tipado
+    function salHello(msg) {
+        return msg;
+    }
+})();
