@@ -9,7 +9,8 @@
     // //! Evitar los any
     const a = 10;
     // tsconfig.json -> "noImplicitAny": true -> exige tipado
-    function salHello(msg) {
-        return msg;
+    function sayHello(msg) {
+        return `Hola ${msg}`;
     }
+    console.log(sayHello('Mundo'));
 })();

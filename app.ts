@@ -14,7 +14,10 @@
   const a: number = 10;
 
   // tsconfig.json -> "noImplicitAny": true -> exige tipado
-  function salHello( msg: string ): string {
-    return msg;
+  function sayHello( msg: string ): string {
+    return `Hola ${ msg }`;
   }
+
+  console.log( sayHello( 'Mundo' ) );
+  
 })()
